@@ -1,4 +1,3 @@
-import homePageDOM from "./js/home"
-import "./css/styles.css"
+import displayModule from "./js/displayModule"
 
-homePageDOM.init();
+displayModule.init();

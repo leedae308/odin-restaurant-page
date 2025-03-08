@@ -2,6 +2,7 @@ class HomeDOM {
 
     init() {
         this.cacheDOM();
+        this.content.innerHTML="";
         this.subTitle();
         this.Title();
         this.Description();
