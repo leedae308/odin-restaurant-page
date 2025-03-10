@@ -3,6 +3,7 @@ class HomeDOM {
     init() {
         this.cacheDOM();
         this.content.innerHTML="";
+        this.content.setAttribute("class", "home");
         this.subTitle();
         this.Title();
         this.Description();
@@ -43,4 +44,12 @@ class HomeDOM {
 }
 
 // Export an instance so it can be used directly
-export default new HomeDOM();
+export default new HomeDOM();            
+            
+            
+            
+            
+            
+            
+            
+            

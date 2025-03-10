@@ -1,0 +1,80 @@
+/* menu.css */
+#content.menu {
+    display: flex;
+    justify-content: flex-start;  /* Start aligning to the top */
+    flex-direction: column;  /* Stack the theme elements */
+    margin: 2rem;
+    position: relative;
+    flex-grow: 1;
+    width: 90%;  /* Ensure it doesn't overflow its parent */
+}
+
+#content.menu::before {
+    content: "";
+    position: absolute;
+    top: -3em;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.theme {
+    box-sizing: border-box;  /* Prevents padding from increasing the size */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    padding-right:1rem;
+}
+
+.theme-name {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+
+.theme-description {
+    font-size: 1.5rem;
+    color: var(--menuColor);
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    margin-right: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;  /* Prevents padding from increasing the size */
+}
+
+.card>img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+}
+
+.food-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.food-name>button {
+    border-radius: 1rem;
+}
+
+.price {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
